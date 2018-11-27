@@ -3,15 +3,14 @@
  * You should add only imports statements here (e.g new pages like home page import)
 */
 
+/* TB 4 */
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
 /* CSS Reset */
 @import 'base/reset';
 
 /* Font faces */
 @import 'base/fonts';
-
-/* TB SASS */
-@import 'vendor/bootstrap';
-/* Components */
 
 /* Home page */
 @import 'pages/home';
