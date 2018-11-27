@@ -1,23 +1,17 @@
-/* By Athlon Front-End Team */
-
-/* Core variables */
-@import 'base/vars';
+/**
+ * This is the main SCSS file for your app
+ * You should add only imports statements here (e.g new pages like home page import)
+*/
 
 /* CSS Reset */
 @import 'base/reset';
 
-/* CSS print */
-@import 'base/print';
-
-/* Fonts */
+/* Font faces */
 @import 'base/fonts';
 
-/* Mixins, helpers and functions */
-@import 'base/mixins';
-
-/* Vendor */
-
+/* TB SASS */
+@import 'vendor/bootstrap';
 /* Components */
 
-/* Browser specific styles */
-@import 'dirty/hacks';
+/* Home page */
+@import 'pages/home';

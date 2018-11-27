@@ -1,5 +1,5 @@
+/* The main JS file ES6 is allowed here :) */
+import m from './m';
 import '../scss/app.scss';
 
-$(function() {
-  console.log("Hello from jQuery!");
-});
+console.log('m', m);
