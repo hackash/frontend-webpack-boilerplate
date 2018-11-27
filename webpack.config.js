@@ -56,6 +56,7 @@ const config = {
   plugins: [
     new ExtractTextPlugin('css/[name].css'),
     new BrowserSyncPlugin({
+      hash: false,
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['dist'] },
@@ -65,9 +66,7 @@ const config = {
       jQuery: 'jquery',
     }),
     new HtmlWebpackPlugin({
-      hash: true,
-      title: 'HTML/SCSS/ES6 starter',
-      myPageHeader: 'Hello frontend team members!',
+      hash: false,
       template: './src/index.html',
       filename: './index.html',
     }),

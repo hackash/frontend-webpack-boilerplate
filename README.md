@@ -1,24 +1,5 @@
 # Front-end Webpack Boilerplate
 
-## Managing assets ##
-
-### Define Package
-
-* Amend `package.json`
-    * Specify your project package name.
-    * Specify your project package version.
-    * Specify your project package description.
-    * Specify your project package repository url.
-    * Specify your project package license.
-* Configure `webpack.config.js`
-    * Define at the beginning of the file the server path to your project location.
-```js
-const localServer = {
-  path: 'localhost/',
-  port: 3000
-};
-```
-
 ### Assets Source
 
 * _SASS_ files are located under `/src/scss/`
