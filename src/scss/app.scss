@@ -3,14 +3,17 @@
  * You should add only imports statements here (e.g new pages like home page import)
 */
 
-/* TB 4 */
-@import '../../node_modules/bootstrap/scss/bootstrap';
+/* TB 4 stuff */
+@import '~bootstrap/scss/bootstrap-reboot.scss';
+@import '~bootstrap/scss/utilities/text';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/card';
+
 
 /* CSS Reset */
 @import 'base/reset';
-
-/* Font faces */
-@import 'base/fonts';
 
 /* Home page */
 @import 'pages/home';

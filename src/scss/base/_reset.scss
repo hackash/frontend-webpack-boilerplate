@@ -1,4 +1,9 @@
 /**
  * Put here those parts which apply each and every page your website
- * NOTE: this is not a place to put everything that you want :)
 */
+
+@import '_variables';
+
+html, body {
+  background: $white;
+}

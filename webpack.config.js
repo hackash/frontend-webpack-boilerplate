@@ -12,6 +12,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js'
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9192
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   module: {
     rules: [
       {
@@ -42,7 +52,7 @@ module.exports = {
         }]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|jpeg)$/,
         use: {
           loader: 'file-loader',
           options: {
@@ -61,8 +71,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      hash: false,
-      template: './src/index.html'
+      template: path.join(__dirname, 'src', 'index.html'),
+      inject: 'body'
     })
   ]
 };
